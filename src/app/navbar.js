@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+
 
 
 
@@ -10,7 +12,7 @@ export default function Navbar() {
  
     </>
   return (
-   <div className=" mx-auto w-full bg-gray-100  p-6 flex justify-between items-center flex-shrink-0">
+   <div className=" mx-auto w-full bg-black text-white  p-3 flex justify-between items-center flex-shrink-0">
   <div className="navbar 
   ">
   <div className="navbar-start">
@@ -32,7 +34,12 @@ export default function Navbar() {
         <li><a>Item 3</a></li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+   <div className="flex gap-2">
+   <Image src="/floral-perfume-bottle-orchid-flowers-floral-perfume-bottle-orchid-flowers-116126068 (1).webp"  width={50} 
+      height={40} className="rounded-lg"
+   alt="perfume"></Image>
+   <h1 className="text-xl font-semibold">AromaLuxe</h1>
+   </div>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
