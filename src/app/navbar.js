@@ -17,6 +17,9 @@ export default function Navbar() {
       <li>
         <Link href="/login">Login</Link>
       </li>
+      <li>
+        <Link href="/dashboard/add-product">Add Product</Link>
+      </li>
     </>
   );
   return (

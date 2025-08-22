@@ -67,9 +67,7 @@ export default function LoginPage() {
           Sign in with Google
         </button>
 
-        <p className="mt-4 text-center">
-          Don't have an account? <a href="/register" className="link link-primary">Register</a>
-        </p>
+        <p className="mt-4 text-center"><a href="/register" className="link link-primary">Register</a> </p>
       </div>
     </div>
   );
