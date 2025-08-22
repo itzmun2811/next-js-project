@@ -2,9 +2,11 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Products() {
   const [products, setProducts] = useState([]);
+    const router = useRouter();
 
   useEffect(() => {
     fetch("/api/products")
@@ -28,7 +30,7 @@ export default function Products() {
     <p>{p?.description}</p>
     <p>{p?.price}</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
+      <button className="btn btn-primary"   onClick={() => router.push(`/products/${p._id}`)}>View Details</button>
     </div>
   </div>
 </div>
