@@ -28,7 +28,7 @@ export default function RegisterPage() {
 
     if (res.ok) {
       alert("✅ User registered successfully!");
-      router.push("/login"); // redirect to login page
+      router.push("/"); // redirect to login page
     } else {
       setError(result.error || "Something went wrong");
     }
