@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { signIn } from "next-auth/react";
 
 export default function RegisterPage() {
   const [loading, setLoading] = useState(false);
@@ -68,6 +69,19 @@ export default function RegisterPage() {
             {loading ? "Registering..." : "Register"}
           </button>
         </form>
+         <div className="divider">OR</div>
+        
+                <button
+                  type="button"
+                  className="btn btn-outline w-full"
+                  onClick={() => signIn("google", { callbackUrl: "/products" })}
+                >
+                  Sign in with Google
+                </button>
+        
+                <p className="mt-4 text-center">
+                  Don't have an account? <a href="/login" className="link link-primary">Login</a>
+                </p>
       </div>
     </div>
   );

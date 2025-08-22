@@ -1,3 +1,4 @@
+import Logout from "@/Logout/logout";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -46,7 +47,7 @@ export default function Navbar() {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+<Logout></Logout>
   </div>
 </div>
    </div>
