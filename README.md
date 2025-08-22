@@ -1,4 +1,4 @@
-# 🌸 AromaLuxe - A Perfume Collection Wwebsite
+# 🌸 AromaLuxe - A Perfume Collection Website
 
 A **Next.js 15** project where users can explore perfumes, view details, and contribute to the collection by adding their own preferred perfumes.  
 Built with **NextAuth.js** for secure authentication and **MongoDB** for reliable data storage.
